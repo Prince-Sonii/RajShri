@@ -14,17 +14,9 @@
     <!-- navigation menu -->
     <nav class="nav_container">
         <div class="nav_items" id="nav_bar">
-            <!-- <div class="dropdown nav_drop_down nav_hamburger ">
-                <button class=" nav_items_dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="fa-solid fa-bars" style="color: #363636;"></i>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="nav_drop_menu" style="color: blue" href="#">log in</a></li>
-                </ul>
-            </div> -->
             <div class="nav_items_logo">
                 <div class="logo_img">
-                    <img src="images/logo1.webp" alt="" class="rs_logo">
+                    <img src="images/logohd.png" alt="" class="rs_logo">
                 </div>
                 <div class="logo_text">
                     <h3 class="nav_logo_text">IRRIGATION</h3>
@@ -32,19 +24,13 @@
             </div>
             <div class="nav_items_list">
                 <ul class="nav_list_items">
-                    <li class="nav_list_child">Home</li>
-                    <li class="nav_list_child">About</li>
-                    <li class="nav_list_child">Services</li>
-                    <li class="nav_list_child">Contact us</li>
+                    <li class="nav_list_child" id="home_btn">Home</li>
+                    <li class="nav_list_child" id="about_btn">AboutUs</li>
+                    <li class="nav_list_child" id="services_btn">Services</li>
+                    <li class="nav_list_child" id="contactUs_btn">Contact us</li>
                 </ul>
             </div>
             <div class="nav_items_searchbox">
-                <!-- <div class="search_button">
-                    <button class="search_submit_button" id="submit_button"><i
-                            class="fa-solid fa-magnifying-glass fa-xl" style="color: #ffffff;"></i></button>
-                    <input type="search" name="" id="" placeholder="search" class="nav_items_search">
-                </div> -->
-
                 <div class="dropdown nav_drop_down ">
                     <button class=" nav_items_dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
@@ -54,7 +40,6 @@
                         <li><a class="nav_drop_menu" href="#">About</a></li>
                         <li><a class="nav_drop_menu" href="#">Services</a></li>
                         <li><a class="nav_drop_menu" href="#">Contact us</a></li>
-                        <!-- <li><a class="nav_drop_menu" style="color: blue" href="#">log in</a></li> -->
                     </ul>
                 </div>
                 <div class="login_profile">
@@ -68,8 +53,8 @@
         <section class="h_container">
             <div class="hero_container">
                 <!-- <div class="hero_image_conatiner">
-                <img src="people.jpg" alt="" class="hero_image">
-            </div> -->
+                <img src="people.jpg" alt="" class="hero_image"> -->
+            </div>
                 <div class="hero_text_container">
                     <div class="about_farm">
                         <p class="hero_text">About Our Farm</p>
@@ -150,24 +135,15 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="benefit_container">
-        <div class="intern">
-            <p class="hero_text">Internship Oppurtunities For Students</p>
-            <div class="intern_apply">
-                <button class="apply_now" id="ap_btn">Apply Now</button>
-            </div>
-        </div>
-           <div class="grow intern">
-            <p class="hero_text">Grow Your Business With <strong>PRASUNET</strong></STRong></p>
-            <div class="intern_apply">
-                <button class="apply_now" id="rg_btn">Register Now</button>
-            </div>
-        </div>
-       </section> -->
     </main>
     <footer class="footer_container">
         <section class="footer_section">
-            <p class="hero_text">RAJSHRI IRRIGATION</p>
+            <div class="footer_first">
+                <div class="footer_logo">
+                    <!-- <img src="images/logohd.png" alt="" class="footer_logo_img"> -->
+                </div>
+                <p class="hero_text" style="color: #ffffff;">RAJSHRI IRRIGATION</p>
+            </div>
             <div class="links_container">
                 <div class="links">
                     <p class="links_heading">About Company</p>
@@ -179,32 +155,22 @@
                         <li>Terms & Condition</li>
                     </ul>
                 </div>
-                <!-- <div class="links">
-                    <p class="links_heading">Useful Links</p>
-                    <ul class="footer_link">
-                        <li>Internships</li>
-                        <li>Team</li>
-                        <li>Career</li>
-                        <li>Contact</li>
-                        <li>FAQ</li>
-                    </ul>
-                </div> -->
                 <div class="updates">
                     <div class="get_email">
                         <input type="email" class="email_id" placeholder="enter you email">
                     </div>
-                    <button class="updates_btn">Get updates</button>
+                    <button class="updates_btn" id="get_upd_btn">Get updates</button>
                 </div>
             </div>
         </section>
     </footer>
     <script src="web.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </body>
 
 </html>
