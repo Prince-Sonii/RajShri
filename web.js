@@ -17,27 +17,41 @@ navBar.addEventListener("mouseleave",()=>{
         navBar.style.opacity = 0.6;
     }
 })
-// for search button
-let button = true;
-const searchButton = document.getElementById("submit_button");
-const applyButton = document.getElementById("ap_btn");
-const registerButton = document.getElementById("rg_btn");
-searchButton.onclick = ()=>{
-    searchButton.style.scale = .9;
+// let button = true;
+const getUpdateButton = document.getElementById("get_upd_btn");
+getUpdateButton.onclick =()=>{
+    getUpdateButton.style.scale = .9;
     setTimeout(()=>{
-        searchButton.style.scale = 1;
-        // buttonAnime.style.scale = 1;
+        getUpdateButton.style.scale = 1;
     },70)
 }
-applyButton.onclick =()=>{
-    applyButton.style.scale = .9;
-    setTimeout(()=>{
-        applyButton.style.scale = 1;
-    },70)
+//for navbar buttons
+const homeButton = document.getElementById("home_btn");
+const aboutButton = document.getElementById("about_btn");
+const servicesButton = document.getElementById("services_btn");
+const conactUsButton = document.getElementById("contactUs_btn");
+homeButton.onclick = () =>{
+    window.scrollTo({
+        top: 0,  // Y-position in pixels (e.g., 500px down the page)
+        behavior: 'smooth' // Optional, makes scrolling smooth
+      });
 }
-registerButton.onclick =()=>{
-    registerButton.style.scale = .9;
-    setTimeout(()=>{
-        registerButton.style.scale = 1;
-    },70)
+aboutButton.onclick = () =>{
+    window.scrollTo({
+        top: 428,  // Y-position in pixels (e.g., 500px down the page)
+        left: 0,   // X-position in pixels (usually 0 if scrolling vertically)
+        behavior: 'smooth' // Optional, makes scrolling smooth
+      });
+}
+servicesButton.onclick = () =>{
+    window.scrollTo({
+        top: 882,  // Y-position in pixels (e.g., 500px down the page)
+        behavior: 'smooth' // Optional, makes scrolling smooth
+      });
+}
+conactUsButton.onclick = () =>{
+    window.scrollTo({
+        top: document.body.scrollHeight,  // Y-position in pixels (e.g., 500px down the page)
+        behavior: 'smooth' // Optional, makes scrolling smooth
+      });
 }
